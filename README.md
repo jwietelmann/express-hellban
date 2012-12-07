@@ -3,6 +3,8 @@ express-hellban
 
 Express.js middleware for hellbanning lusers.
 
+For banned users, this middleware waits a random number of milliseconds before either responding successfully or throwing a 500 error. Wait time range, failure rate, and success/failure behavior is configurable
+
 ```javascript
 
 // get the module loaded
@@ -24,7 +26,7 @@ app.post('*', hellban(isBanned, {
   failureRate: 1.0,
   minWaitTime: 5000,
   maxWaitTime: 10000,
-  onSuccess: function(req, res, next) { next(); },
-  onFailure: function(req, res, next) { res.send(500); }
+  onSuccess: function(req, res, next) { next(); }, // just go to the next matching route
+  onFailure: function(req, res, next) { res.send(500); } // HTTP 500 error
 }));
 ```

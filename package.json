@@ -1,6 +1,6 @@
 {
   "name": "express-hellban",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Joel Wietelmann <jwietelmann@gmail.com>",
   "description": "Express.js middleware for hellbanning lusers.",
   "repository": {
