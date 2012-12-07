@@ -1,0 +1,10 @@
+{
+  "name": "express-hellban",
+  "version": "0.1.0",
+  "author": "Joel Wietelmann <jwietelmann@gmail.com>",
+  "description": "Express.js middleware for hellbanning lusers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwietelmann/express-hellban"
+  }
+}
